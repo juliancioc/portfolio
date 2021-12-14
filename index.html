@@ -12,14 +12,29 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio website complete</title>
+    <title>Juliancio</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MLN239FRWS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-MLN239FRWS")
+    </script>
   </head>
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">Juliâncio</a>
+          <a href="#" class="nav__logo">Juliancio</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -57,7 +72,7 @@
             Frontend Developer
           </h1>
 
-          <a href="#" class="button">Contact</a>
+          <a href="#contact" class="button">Contact</a>
         </div>
 
         <div class="home__social">
@@ -182,21 +197,22 @@
         <h2 class="section-title">Work</h2>
 
         <div class="work__container bd-grid">
-          <div class="work__img">
+          <a
+            href="https://festive-kowalevski-24df5a.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work__img"
+          >
+            <img src="assets/img/work/pomodoro.png" alt="" />
+          </a>
+          <a
+            href="https://calcimport.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work__img"
+          >
             <img src="assets/img/work/calc-import.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work/animated-navigation.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work/card-content-placeholder.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work/faq-collapse.png" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work/pokemon-cards.png" alt="" />
-          </div>
+          </a>
         </div>
       </section>
 

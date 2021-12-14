@@ -324,13 +324,14 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
-  row-gap: 2rem;
-}
+
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  margin: 12px;
 }
 .work__img img {
   transition: 1s;
@@ -447,9 +448,10 @@ img {
     width: 300px;
   }
   .work__container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .contact__form {
     width: 360px;
