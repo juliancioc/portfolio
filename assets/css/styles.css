@@ -330,8 +330,10 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
   width: 100%;
-  max-width: 420px;
-  margin: 12px;
+  margin-bottom: 12px;
+
+  max-width: 440px;
+  height: 320px;
 }
 .work__img img {
   transition: 1s;

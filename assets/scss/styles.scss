@@ -1,19 +1,15 @@
-/*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
     --font-semi: 600;
 }
 
-/*===== Colores =====*/
 :root{
     --first-color: #4070F4;
     --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
 :root{
     --body-font: 'Poppins', sans-serif;
 
@@ -28,7 +24,6 @@
     }
 }
 
-/*===== Margenes =====*/
 :root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;
@@ -38,7 +33,6 @@
     --mb-6: 3rem;
 }
 
-/*===== z index =====*/
 :root{
     --z-back: -10;
     --z-normal: 1;
@@ -46,7 +40,6 @@
     --z-fixed: 100;
 }
 
-/*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -73,10 +66,9 @@ a{
 img{
     max-width: 100%;
     height: auto;
-    display: block; // borra los espacios en blanco
+    display: block; 
 }
 
-/*===== CLASS CSS ===== */
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
@@ -102,7 +94,6 @@ img{
     padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -122,7 +113,6 @@ img{
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
-/*===== NAV =====*/
 .nav{
     height: var(--header-height);
     display: flex;
@@ -172,7 +162,7 @@ img{
         cursor: pointer;
     }
 }
-/*Active menu*/
+
 .active::after{
     position: absolute;
     content: '';
@@ -183,12 +173,10 @@ img{
     background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
 .show{
     right: 0;
 }
 
-/*===== HOME =====*/
 .home{
     height: calc(100vh - 3rem);
     row-gap: 1rem;
@@ -227,7 +215,6 @@ img{
     }
 }
 
-/*BUTTONS*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -241,7 +228,6 @@ img{
     }
 }
 
-/* ===== ABOUT =====*/
 .about{
     &__container{
         row-gap: 2rem;
@@ -261,7 +247,6 @@ img{
     }
 }
 
-/* ===== SKILLS =====*/
 .skills{
     &__container{
         row-gap: 2rem;
@@ -318,7 +303,7 @@ img{
         border-radius: .5rem;
     }
 }
-/* ===== WORK =====*/
+
 .work{
     &__container{
         row-gap: 2rem;
