@@ -1,0 +1,9 @@
+article {
+  width: 90%;
+  max-width: 660px;
+  margin: 100px auto;
+}
+
+article small {
+  color: #aaa;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Juliancio</title>
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+          <div>
+            <a href="/" class="nav__logo">Juliancio</a>
+          </div>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/blog" class="nav__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <article>
+      <small id="date"> 12 de outubro de 2021 </small>
+
+      <h1>
+        Como encontrar o maior valor em um array de objetos com JavaScript
+      </h1>
+
+      <p>
+        Encontrar o maior valor dentro de um array é muito simples, mas e quando
+        é um array de objetos?
+      </p>
+
+      <p>
+        Também não tem nenhum segredo, devemos apenas combinar o uso de Math,
+        apply() e map().
+      </p>
+
+      <p>Veja um exemplo na dica de hoje.</p>
+
+      <p>Em nosso cenário temos o seguinte array de objetos:</p>
+      <div class="wrapper-code">
+        <code>
+          const cars = [<br />
+          &nbsp;{ name: 'Civic LX 2015', value: 89500 },<br />
+          &nbsp;{ name: 'HRV', value: 119000 },<br />
+          &nbsp;{ name: 'Onix', value: 54000 }<br />
+          ]
+        </code>
+      </div>
+      <p>
+        Um array com o nome <i>car</i> possui 3 objetos, cada objeto tem 2
+        propriedades <i>name</i> e <i>value</i>.
+      </p>
+      <h3>Encontrando o maior valor</h3>
+      <p>
+        Para filtrar o array e retornar o carro com o maior preço, podemos fazer
+        da seguinte forma:
+      </p>
+      <div class="wrapper-code">
+        <code>
+          const maxValue = Math.max.apply(Math, cars.map((item) =>
+          item.value))<br />
+
+          console.log(maxValue) // 119000
+        </code>
+      </div>
+
+      <p>
+        O código acima percorre todo o array e acessa a propriedade
+        <i>value</i> dentro de cada objeto, retornando o <i>value</i> com maior
+        valor.
+      </p>
+
+      <h3>
+        Vamos entender o que exatamente foi feito pra chegar até esse resultado
+      </h3>
+
+      <ol>
+        <li>
+          <p>Primeiro usamos o objeto <code>Math</code></p>
+        </li>
+        <li>
+          <p>
+            Dentro do objeto <code>Math</code> acessamos a função
+            <code>Math.max()</code>, essa função recebe uma sequência de números
+            e retorna o maior valor
+          </p>
+        </li>
+        <li>
+          <p>
+            Agora que descobrimos que <code>Math.max()</code> retorna o maior
+            valor, precisamos passar os números que queremos analisar para
+            dentro dessa função
+          </p>
+        </li>
+        <li>
+          <p>
+            Pra chamar uma função a partir de <code>Math.max()</code> vamos usar
+            o método <code>apply()</code>
+          </p>
+        </li>
+        <li>
+          <p>
+            O método <code>apply()</code> espera receber dois parâmetros e no
+            nosso caso passamos <code>Math</code> e os valores que queremos
+            analisar.
+          </p>
+        </li>
+        <li>
+          <p>
+            Para percorrer o array de cars e retornar os valores usamos o método
+            <code>map()</code>
+          </p>
+        </li>
+      </ol>
+
+      <p>
+        Em um artigo futuro vamos nos aprofundar mais no método
+        <code>map()</code> ele é muito importante e muito usado para percorrer
+        array e retornar um valor
+      </p>
+
+      <p>E isso é tudo, até a próxima! :)</p>
+    </article>
+
+    <footer class="footer">
+        <p class="footer__title">Juliâncio</p>
+        <div class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/julianciocarvalho/"
+            target="_blank"
+            class="footer__icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+  
+          <a
+            href="https://github.com/juliancioc"
+            target="_blank"
+            class="footer__icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+      </footer>
+</body>
+</html>
