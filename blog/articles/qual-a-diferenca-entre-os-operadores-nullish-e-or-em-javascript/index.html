@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Juliancio</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="/" class="nav__logo">Juliancio</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/blog" class="nav__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <article>
+      <small id="date"> 09 de fevereiro de 2022 </small>
+      <h1>
+        Qual a diferença entre os operadores Nullish (??) e OR (||) em
+        JavaScript?
+      </h1>
+      <p>
+        Os operadores lógicos ?? e || são operadores que funcionam com
+        condições, onde o operador OR (||) executa uma ação se o valor for
+        verdadeiro, já o Nullish (??) executa apenas se o valor for igual a null
+        ou undefined. Vamos entender isso na prática.
+      </p>
+      <h3>Operador OR (||)</h3>
+      <p>Temos uma variável com o nome valueA que recebe o número 0</p>
+      <div class="wrapper-code">
+        <code>
+          let valueA = 0;<br />
+
+          console.log(valueA || 'Usando ||');
+        </code>
+      </div>
+      <p>
+        Sabemos que o operador OR (||) executa se o valor for verdadeiro,
+        pensando nisso deixo uma pergunta simples, o valor 0 é true ou false?
+      </p>
+      <div class="wrapper-code">
+        <code>
+          console.log(Boolean(0));
+          <br />
+
+          //false
+        </code>
+      </div>
+      <p>
+        Temos a resposta, é falso. Com essa informação sabemos que o código
+        anterior exibirá 'Usando ||' e não a variável que recebe à esquerda.
+      </p>
+      <h3>Operador Nullish (??)</h3>
+      <p>
+        Agora para entendermos o operador Nullish (??) fica muito fácil, ele só
+        será executado se o valor à esquerda for null ou undefined.
+      </p>
+      <div class="wrapper-code">
+        <code>
+          let valueA = undefined;
+          <br />
+          console.log(valueA ?? 'Usando ??'); //Usando ??
+        </code>
+      </div>
+      <p>
+        Se a variável valueA receber undefined ou null o valor exibido no log
+        será ‘Usando ??’ caso contrário será o valor da variável, veja outro
+        exemplo pra ficar mais claro:
+      </p>
+      <div class="wrapper-code">
+        <code> let valueA = 'Academia'; </code>
+      </div>
+      <p>A variável recebe uma string Academia, logo será exibida no log:</p>
+      <div class="wrapper-code">
+        <code>
+          console.log(valueA ?? 'Usando ??'); <br />
+          //Academia
+        </code>
+      </div>
+      <h3>
+        Qual a diferença entre o operador Nullish (??) e o operador OR (||)?
+      </h3>
+      <p>
+        O operador Nullish (??) será executado apenas se o valor a esquerda for
+        null ou undefined, enquanto o operador OR (||) será executado quando o
+        valor for true.
+      </p>
+      <h3>Quando usar Nullish (??) ou OR (||)?</h3>
+      <p>
+        Depois que entendemos a diferença entre os dois fica bem tranquilo
+        responder essa pergunta, vamos para o código que é o melhor lugar para
+        entender melhor:
+      </p>
+      <div class="wrapper-code">
+        <code> let valueA = ''; </code>
+      </div>
+      <p>
+        Agora a variável valueA recebe uma string vazia, logo sabemos que uma
+        string vazia é false:
+      </p>
+      <div class="wrapper-code">
+        <code> console.log(Boolean('')) //false </code>
+      </div>
+
+      <div class="wrapper-code">
+        <code>
+          let valueA = '';<br />
+          console.log(valueA || 'Usando ||'); // Usando ||<br />
+          console.log(valueA ?? 'Usando ??'); // Nada será exibido pois é uma
+          string vazia
+        </code>
+      </div>
+      <div class="wrapper-list">
+        <ul>
+          <li>
+            Use o operador Nullish (??) quando você quiser executar uma ação em
+            que o valor à esquerda for igual a null ou undefined.
+          </li>
+          <li>
+            Use o operador OR (||) quando você quiser executar uma ação em que o
+            valor for igual a true.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <p class="footer__title">Juliâncio</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/julianciocarvalho/"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+
+        <a
+          href="https://github.com/juliancioc"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+      <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+  </body>
+</html>
