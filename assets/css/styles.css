@@ -333,7 +333,7 @@ img {
   margin-bottom: 12px;
 
   max-width: 440px;
-  height: 320px;
+  max-height: 320px;
 }
 .work__img img {
   transition: 1s;
@@ -452,7 +452,7 @@ img {
   .work__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .contact__form {
