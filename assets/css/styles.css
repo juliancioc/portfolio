@@ -330,7 +330,7 @@ img {
   border-radius: 0.5rem;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 12px;
+  margin: 15px auto;;
 
   max-width: 320px;
   max-height: 320px;
