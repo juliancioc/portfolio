@@ -1,348 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Juliancio</title>
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-MLN239FRWS"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <title>Juliancio</title>
 
-      gtag("config", "G-MLN239FRWS");
-    </script>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Juliancio</a>
-        </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLN239FRWS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-          </ul>
-        </div>
+    gtag("config", "G-MLN239FRWS");
+  </script>
+</head>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Juliancio</a>
+      </div>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Juliâncio</span><br />
-            Frontend Developer
-          </h1>
-        </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/julianciocarvalho/"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-          <a
-            href="https://github.com/juliancioc"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi,<br />I'am <span class="home__title-color">Juliâncio</span><br />
+          Frontend Developer
+        </h1>
+      </div>
 
-        <div class="home__img">
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/julianciocarvalho/" target="_blank" class="home__social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+
+        <a href="https://github.com/juliancioc" target="_blank" class="home__social-icon"><i
+            class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="home__img">
+        <img src="assets/img/profile.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
           <img src="assets/img/profile.jpeg" alt="" />
         </div>
-      </section>
 
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/profile.jpeg" alt="" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">I'am Juliâncio</h2>
-            <p class="about__text">
-              Hey, what's up? My name is Juliancio, I'm from Brazil and in this
-              moment I live in São Paulo but I was born in Bahia. I really love
-              technology and for this reason, try to help a lot people using the
-              code.
-            </p>
-          </div>
+        <div>
+          <h2 class="about__subtitle">I'am Juliâncio</h2>
+          <p class="about__text">
+            Hey, what's up? My name is Juliancio, I'm from Brazil and in this
+            moment I live in São Paulo but I was born in Bahia. I really love
+            technology and for this reason, try to help a lot people using the
+            code.
+          </p>
         </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">My knowledge</p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage">95%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <span class="skills__percentage">90%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-react skills__icon"></i>
-                <span class="skills__name">React</span>
-              </div>
-              <div class="skills__bar skills__react"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-angular skills__icon"></i>
-                <span class="skills__name">Angular</span>
-              </div>
-              <div class="skills__bar skills__angular"></div>
-              <div>
-                <span class="skills__percentage">60%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-vue skills__icon"></i>
-                <span class="skills__name">Vue</span>
-              </div>
-              <div class="skills__bar skills__vuejs"></div>
-              <div>
-                <span class="skills__percentage">50%</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img src="assets/img/about.jpg" alt="" class="skills__img" />
-          </div>
-        </div>
-      </section>
-
-      <section class="work section" id="work">
-        <h2 class="section-title">Works</h2>
-
-        <div class="work__container bd-grid">
-          <a
-            href="https://app.abfinance.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/Ab-Finance-Controle-Fincanceiro-Pessoal.png" alt="AB Finance" />
-          </a>
-          <a
-            href="https://adorable-bunny-60f920.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/Santa-Fé-Cell.png" alt="Santa Fé Cell" />
-          </a>
-          <a
-            href="https://lovely-pasca-a30a7d.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/QR-Coode-Component.png" alt="QR Code Component" />
-          </a>
-          <a
-            href="https://fluffy-genie-0919b5.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/Interactive-rating-component.png" alt="Interactive Rating Component" />
-          </a>
-          <a
-            href="https://incomparable-cat-034fc8.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/Pomodoro2.png" alt="Pomodoro version 2" />
-          </a>
-          <a
-            href="https://sprightly-cactus-ddee75.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/NFT-preview-card-component.png" alt="NFT Preview Card" />
-          </a>
-          <a
-            href="https://cozy-concha-05b60e.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/lp-equalizer.png" alt="Equalizer" />
-          </a>
-          <a
-            href="https://effervescent-pavlova-d1c649.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/todo-app.png" alt="Todo App" />
-          </a>
-          <a
-            href="https://relaxed-youtiao-6fe424.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/lp-skilled.png" alt="Langing Page" />
-          </a>
-          <a
-            href="https://startling-dieffenbachia-52e184.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/product-preview.png" alt="Product Preview" />
-          </a>
-          <a
-            href="https://juliancioc.github.io/mapty/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/mapty.png" alt="mapty" />
-          </a>
-          <a
-            href="https://keen-noether-ac5b35.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/dtmoney.png" alt="Dtmoney" />
-          </a>
-          <a
-            href="https://pensive-tereshkova-83a845.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img
-              src="assets/img/work/product-page-geek.png"
-              alt="product geek page"
-            />
-          </a>
-          <a
-            href="https://festive-kowalevski-24df5a.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/pomodoro.png" alt="" />
-          </a>
-          <a
-            href="https://calcimport.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work__img"
-          >
-            <img src="assets/img/work/calc-import.png" alt="" />
-          </a>
-        </div>
-      </section>
-    </main>
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Juliâncio</p>
-      <div class="footer__social">
-        <a
-          href="https://www.linkedin.com/in/julianciocarvalho/"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-
-        <a
-          href="https://github.com/juliancioc"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-github"></i
-        ></a>
       </div>
-      <p>&#169; 2021 copyright all right reserved</p>
-    </footer>
+    </section>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-  </body>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p class="skills__text">My knowledge</p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+            <div>
+              <span class="skills__percentage">95%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+            <div>
+              <span class="skills__percentage">90%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-react skills__icon"></i>
+              <span class="skills__name">React</span>
+            </div>
+            <div class="skills__bar skills__react"></div>
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-angular skills__icon"></i>
+              <span class="skills__name">Angular</span>
+            </div>
+            <div class="skills__bar skills__angular"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-vue skills__icon"></i>
+              <span class="skills__name">Vue</span>
+            </div>
+            <div class="skills__bar skills__vuejs"></div>
+            <div>
+              <span class="skills__percentage">50%</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/img/about.jpg" alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <h2 class="section-title">Works</h2>
+
+      <div class="work__container bd-grid">
+        <a href="https://charming-kataifi-101693.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/invoice-react-app.png" alt="Invoice React App" />
+        </a>
+        <a href="https://app.abfinance.com.br/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/Ab-Finance-Controle-Fincanceiro-Pessoal.png" alt="AB Finance" />
+        </a>
+        <a href="https://adorable-bunny-60f920.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/Santa-Fé-Cell.png" alt="Santa Fé Cell" />
+        </a>
+        <a href="https://lovely-pasca-a30a7d.netlify.app/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/QR-Coode-Component.png" alt="QR Code Component" />
+        </a>
+        <a href="https://fluffy-genie-0919b5.netlify.app/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/Interactive-rating-component.png" alt="Interactive Rating Component" />
+        </a>
+        <a href="https://incomparable-cat-034fc8.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/Pomodoro2.png" alt="Pomodoro version 2" />
+        </a>
+        <a href="https://sprightly-cactus-ddee75.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/NFT-preview-card-component.png" alt="NFT Preview Card" />
+        </a>
+        <a href="https://cozy-concha-05b60e.netlify.app/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/lp-equalizer.png" alt="Equalizer" />
+        </a>
+        <a href="https://effervescent-pavlova-d1c649.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/todo-app.png" alt="Todo App" />
+        </a>
+        <a href="https://relaxed-youtiao-6fe424.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/lp-skilled.png" alt="Langing Page" />
+        </a>
+        <a href="https://startling-dieffenbachia-52e184.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/product-preview.png" alt="Product Preview" />
+        </a>
+        <a href="https://juliancioc.github.io/mapty/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/mapty.png" alt="mapty" />
+        </a>
+        <a href="https://keen-noether-ac5b35.netlify.app/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/dtmoney.png" alt="Dtmoney" />
+        </a>
+        <a href="https://pensive-tereshkova-83a845.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/product-page-geek.png" alt="product geek page" />
+        </a>
+        <a href="https://festive-kowalevski-24df5a.netlify.app/" target="_blank" rel="noopener noreferrer"
+          class="work__img">
+          <img src="assets/img/work/pomodoro.png" alt="" />
+        </a>
+        <a href="https://calcimport.netlify.app/" target="_blank" rel="noopener noreferrer" class="work__img">
+          <img src="assets/img/work/calc-import.png" alt="" />
+        </a>
+      </div>
+    </section>
+  </main>
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Juliâncio</p>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/julianciocarvalho/" target="_blank" class="footer__icon"><i
+          class="bx bxl-linkedin"></i></a>
+
+      <a href="https://github.com/juliancioc" target="_blank" class="footer__icon"><i class="bx bxl-github"></i></a>
+    </div>
+    <p>&#169; 2021 copyright all right reserved</p>
+  </footer>
+
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
