@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12rem 0;
+}
+
+.container h1 {
+  color: #4070f4;
+  margin-bottom: 4rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container img {
+  border-radius: 16px;
+  margin-right: 1rem;
+}
+
+.about_me {
+  max-width: 496px;
+}
+
+.about_me p,
+.about_me h2 {
+  margin-bottom: 1rem;
+}
+.about_me p {
+  font-weight: normal !important;
+}
+
+@media screen and (max-width: 968px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .wrapper h2 {
+    text-align: center;
+  }
+
+  .container img {
+    display: none;
+  }
+}
