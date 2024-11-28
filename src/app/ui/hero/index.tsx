@@ -7,7 +7,7 @@ export default function Hero() {
       <h1>
         Olá, <br />
         meu nome é <span>Juliancio</span>, <br />
-        sou um Desenvolvedor Front-end
+        Desenvolvedor Front-end
       </h1>
 
       <Image src="/profile.jpeg" alt="profile" width={400} height={400} />
