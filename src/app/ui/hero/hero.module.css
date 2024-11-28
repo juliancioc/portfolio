@@ -1,0 +1,28 @@
+.container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.container h1 span {
+  color: #4070f4;
+}
+
+.container img {
+  border-radius: 16px;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 968px) {
+  .container img {
+    display: none;
+  }
+
+  .container {
+    font-size: 1rem;
+  }
+}
