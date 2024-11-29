@@ -21,10 +21,10 @@ export default function Header() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Sobre</Link>
+              <Link href="#about">Sobre</Link>
             </li>
             <li>
-              <Link href="/">Skills</Link>
+              <Link href="#skills">Skills</Link>
             </li>
             <li>
               <Link href="/">Portfólio</Link>

@@ -4,7 +4,7 @@ import styles from "./about.module.css";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <h1>Sobre</h1>
       <div className={styles.wrapper}>
         <Image src="/profile.jpeg" alt="profile" width={300} height={332} />
