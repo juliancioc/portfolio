@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import SocialMedia from "./ui/social-media";
 import About from "./ui/about";
 import Skills from "./ui/skills";
+import Projects from "./ui/projects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <SocialMedia />
         <About />
         <Skills />
+        <Projects />
       </div>
     </>
   );

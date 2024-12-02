@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12rem 0;
+}
+
+.container h1 {
+  color: #4070f4;
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper img {
+  border-radius: 8px;
+  margin: .5rem;
+}
