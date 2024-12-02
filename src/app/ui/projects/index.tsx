@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className={styles.container} id="skills">
+    <div className={styles.container} id="projects">
       <h1>Projetos</h1>
       <div className={styles.wrapper}>
         <Link href="https://elegant-kepler-66d972.netlify.app/" target="_blank">

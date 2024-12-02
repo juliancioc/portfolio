@@ -1,0 +1,21 @@
+.container {
+  background-color: #0e2431;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1024px;
+  color: #fff;
+}
+
+.wrapper h3 {
+  margin-bottom: 1rem;
+}
+
+.wrapper a {
+  color: #fff !important;
+}

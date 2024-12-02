@@ -5,6 +5,7 @@ import SocialMedia from "./ui/social-media";
 import About from "./ui/about";
 import Skills from "./ui/skills";
 import Projects from "./ui/projects";
+import Footer from "./ui/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Skills />
         <Projects />
       </div>
+      <Footer />
     </>
   );
 }
