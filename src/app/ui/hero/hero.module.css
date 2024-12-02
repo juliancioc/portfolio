@@ -8,7 +8,7 @@
 }
 
 .container h1 span {
-  color: #4070f4;
+  color: var(--secondary-color);
 }
 
 .container img {

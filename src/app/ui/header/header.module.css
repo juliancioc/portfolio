@@ -28,7 +28,7 @@
 
 .wrapper a {
   text-decoration: none;
-  color: #0e2431 !important;
+  color: var(--primary-color) !important;
   font-weight: bold;
 }
 

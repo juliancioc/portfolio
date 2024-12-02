@@ -6,7 +6,7 @@
 }
 
 .container h1 {
-  color: #4070f4;
+  color: var(--secondary-color);
   margin-bottom: 3rem;
 }
 

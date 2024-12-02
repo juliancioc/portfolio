@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #0e2431;
+  --secondary-color: #4070f4;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;

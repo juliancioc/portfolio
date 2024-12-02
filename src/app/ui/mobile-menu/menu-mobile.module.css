@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  background-color: #0e2431;
+  background-color: var(--primary-color);
   top: 64px;
   right: 0;
   height: calc(100vh - 64px);
